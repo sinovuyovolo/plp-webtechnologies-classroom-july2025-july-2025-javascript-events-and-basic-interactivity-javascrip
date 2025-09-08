@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive JavaScript Page</title>
+                                      
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive JavaScript Demo</h1>
+
+  <!-- FORM SECTION -->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form id="signupForm">
+      <label for="username">Username (min 5 characters):</label>
+      <input type="text" id="username" name="username" />
+      <br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br />
+
+      <p id="formError" class="error"></p>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- BACKGROUND COLOR CHANGER -->
+  <section>
+    <h2>Background Color Changer</h2>
+    <button id="colorChanger">Change Background</button>
+  </section>
+
+  <!-- FONT SIZE SLIDER -->
+  <section>
+    <h2>Font Size Adjuster</h2>
+    <input type="range" id="fontSlider" min="10" max="40" value="20" />
+    <p id="sliderText">Use the slider to change my font size!</p>
+  </section>
+
+  <!-- MODAL -->
+  <section>
+    <h2>Modal Example</h2>
+    <button id="openModal">Open Modal</button>
+    <div id="modal">
+      <div id="modalContent">
+        <p>This is a modal popup!</p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
